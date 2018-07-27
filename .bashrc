@@ -30,7 +30,11 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 export XDG_CONFIG_HOME=$HOME/.config
+alias tmux='tmux -u'
 
 
 # autostart tmux if it exists
 if [ "$TMUX" = "" ]; then tmux; fi
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Enable direnv
+eval "$(direnv hook zsh)"

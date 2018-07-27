@@ -17,10 +17,11 @@ install_packages () {
 						   libfreetype6-dev \
 						   libfontconfig1-dev \
 						   xclip \
-						   python3-pip
+						   python3-pip \
+						   direnv
 
 	elif [ "$(uname)" = "Darwin" ]; then
-		brew install zsh ctags neovim antigen
+		brew install zsh ctags neovim antigen direnv
 
 		#bashfile=".bash_profile"
 	fi
